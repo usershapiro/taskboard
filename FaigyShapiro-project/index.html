@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&family=Poiret+One&family=Poppins:wght@100;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  </head>
+<body onload="loadFromStorage()">
+<h1 class="font" >Baby Ward Task Board!</h1>
+<h2 class="font">Dear nurse</h2>
+<h3 class="font">Please use this Task Board in order to keep your peace of mind and the baby's well being! Thank You!</h3>
+<div id="form">
+  <form >
+    <div class="mb-3">
+        <label for="fill in your details" class="form-label">Please Fill Your Task Details!</label>
+        <textarea class="form-control" id="details" placeholder="Details"></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="date" class="form-label">Date</label>
+        <input type="date" class="form-control" id="date" placeholder="Date">
+      </div>
+      <div class="mb-3" onmouseleave="">
+        <label for="hour" class="form-label">Hour</label>
+        <input type="time" class="form-control" id="hour" placeholder="hour">
+      </div>
+      <div class="mb-3">
+        <button type="button"  onclick="showMetask()"  class="btn btn-outline-light">Save</button>
+        <button type="reset"  class="btn btn-outline-light">Reset</button>
+      </div>
+    </form>
+</div>
+<br>
+<div class="container text-center">
+  <div id="notes" class="row row-cols-auto">
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>      
+</body>
+</html>
