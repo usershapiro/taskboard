@@ -1,2 +1,1 @@
-# taskboard
-a web which help managing your tasks
+# taskboard helps managing your tasks in easy an fast way
